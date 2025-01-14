@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+  text-wrap-style: stable;
+  text-size-adjust: calc();
+  background-color: chocolate;
+}
+h4 {
+  text-align: right;
+}
+div {
+  text-align: left;
+  size: 0cqmax;
+  background-color: bisque;
+}

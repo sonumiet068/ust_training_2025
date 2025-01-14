@@ -1,0 +1,12 @@
+<h1>Welcome to Maha Kumbh Mela</h1>
+<h4>Orgainsed by Uttar Pradesh Tourism Deparment</h4>
+<div>
+  <h3>Application Name : {{ applicationName }}</h3>
+  <h3>Framework : {{ framework }}</h3>
+  <h3>Developer Name : {{ developerName }}</h3>
+  <h3>Team Size : {{ teamSize }}</h3>
+  <h3>Live : {{ isLive }}</h3>
+  <h3>Data Loaded live :: {{ isLive ? "online" : "offline" }}</h3>
+</div>
+<button (click)="greenUser()">greenUser</button>
+<button (click)="changeAppName()">changeAppName</button>
