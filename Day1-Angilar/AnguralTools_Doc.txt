@@ -1,0 +1,114 @@
+
+
+
+TOOLS
+
+1. Node JS - nodes.org
+2. VS Code - Visual Studio Code
+3. Angular CLI - Command Line Interface 
+command to create angular project 
+1.  ng new employeemangements
+2. ng servie
+
+Day 1 
+
+
+Angular 
+
+Components ,Pipes ,Services,Directives(*ngFor),Routing,Guards
+
+Componetns : 
+1. This is building blocks of Angular application.
+2. This is reusable plugin
+3. Made of 4 files 
+ .html,.css,.ts,.spec.ts
+-- App is the default component and head-main component of an application 
+-- Component can be injected/plugged inside another component, in a simple way
+   <app-bookticket></app-bookticket>
+-- In angular ,we use following command to create components 
+   Ng generate components bookticket
+Command : ng g c bookticket
+-- As a good practice, we create a folder -components inside src/app folder and create all the components inside the components folder
+
+
+--- Comment everything in html 
+
+Ctrl+A
+Ctrl +K +C 
+
+Angulr applications  are created in pieces called Components 
+
+We create separate components for every unique functionality 
+Eg. 
+SearchFligts 
+Book 
+BookingHistory 
+PaymentDetails 
+UserProfile
+About Us
+Contact Us
+
+This application is made up of all this components 
+Componet : is like a plug in,reusable ,injectable 
+Componet is made of files 
+.html ,.css,.ts,.spec.ts
+
+For create components 
+Ng g c searchFlights 
+------
+
+Recording Day 2: 
+
+fn+H28bC
+
+
+Angular 
+
+Components ,Pipes ,Services,Directives(*ngFor),Routing,Guards
+
+Componetns : 
+1. This is building blocks of Angular application.
+2. This is reusable plugin
+3. Made of 4 files 
+ .html,.css,.ts,.spec.ts
+-- App is the default component and head-main component of an application 
+-- Component can be injected/plugged inside another component, in a simple way
+   <app-bookticket></app-bookticket>
+-- In angular ,we use following command to create components 
+   Ng generate components bookticket
+Command : ng g c bookticket
+-- As a good practice, we create a folder -components inside src/app folder and create all the components inside the components folder(same practice for Pipes ,Services,Directives(*ngFor))
+
+
+Pipes in Angular : 
+Pipes are using in .html file for formatting the data display
+Eg : uppercase is a pipe, which will display data in uppercase
+     FirstName:string = 'Sonu';(in.ts file)
+   <h4>{{FirstName | uppercase }}</h4>
+
+---There are lot of inbuilt pipes in Angular are uppercase, lowercase, titlecase, date, percentage, json, etc.
+
+---- We can also create custom pipe 
+      Ng g p pipename (command)
+      Ng g p greetuser (example)
+
+   Eg > firstName:string ="sonu"
+
+   Custom Pipe
+
+   1. create a new pipe in the pipes folder
+   2. ng g p greeting
+   3. go to greeting.pipe.ts file, and observe the file,
+        the class implements pipetransform Interface
+        and we need transform method to change the format of the data
+   4. erase the transform method, and we will write our own 
+   transform(value:String){
+      return 'Hello'+value;
+   }
+
+
+
+      
+
+
+

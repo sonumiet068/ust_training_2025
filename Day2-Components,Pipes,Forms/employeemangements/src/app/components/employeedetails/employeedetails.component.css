@@ -1,0 +1,9 @@
+div {
+  background-color: aquamarine;
+}
+.permanentDiv {
+  background-color: greenyellow;
+}
+.nonpermanentDiv {
+  background-color: rgb(255, 47, 186);
+}

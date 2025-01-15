@@ -1,0 +1,50 @@
+<title>PortfolioMangement</title>
+<table border="1">
+  <tr *ngFor="let st of stockHeaders">
+    <h3>
+      <td>
+        {{ st }}
+      </td>
+    </h3>
+  </tr>
+  <tr
+    *ngFor="let s of stockDetails"
+    class="{{
+      s.stockCurrentPrice > s.stockPurchasePrice
+        ? 'backgroudProfit'
+        : 'backgroudloss'
+    }}"
+  >
+    <h3>
+      <td>{{ s.stockId }}</td>
+    </h3>
+    <h3>
+      <td>{{ s.stockName }}</td>
+    </h3>
+    <h3>
+      <td>{{ s.stockAvailableQty }}</td>
+    </h3>
+    <h3>
+      <td>{{ s.stockPurchasePrice }}</td>
+    </h3>
+    <h3>
+      <td>{{ s.stockCurrentPrice }}</td>
+    </h3>
+    <h3>
+      <td>{{ s.stockPurchasePrice * s.stockAvailableQty }}</td>
+    </h3>
+    <h3>
+      <td>{{ s.stockCurrentPrice * s.stockAvailableQty }}</td>
+    </h3>
+    <h3>
+      <td>
+        {{ s.stockCurrentPrice | investmentstatus : s.stockPurchasePrice }}
+      </td>
+    </h3>
+    <h3>
+      <td>
+        {{ s.stockCurrentPrice | recommendationPipe : s.stockPurchasePrice }}
+      </td>
+    </h3>
+  </tr>
+</table>

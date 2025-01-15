@@ -1,0 +1,8 @@
+.loginSuccess {
+  color: black;
+  background-color: greenyellow;
+}
+.loginFailure {
+  color: bisque;
+  background-color: red;
+}
